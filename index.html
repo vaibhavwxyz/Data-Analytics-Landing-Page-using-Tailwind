@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Live</title>
+    <style>
+        :root {
+            --bg-1: linear-gradient(0deg,
+                rgba(226, 241, 255, 1) 0%,
+                rgba(255, 255, 255, 1) 100%
+            );
+            --bg-2: linear-gradient(180deg,
+            rgba(252, 248, 255, 1) 0%,
+            rgba(242, 248, 255, 1) 100%
+            );
+        }
+        
+        .headerSection {
+            background: var(--bg-1);
+            transform: skew(0, -5deg);
+        }
+        .headerContent {
+            transform: skew(0, 5deg);
+        }
+
+        .ctoSection {
+            background: var(--bg-2);
+            transform: skew(0, -5deg);
+        }
+        .ctoContainer {
+            transform: skew(0, 5deg);
+        }
+    </style>
+</head>
+<body class="font-[Poppins]">
+
+
+    <!-- HERO SECTION -->
+    <section class="headerSection">
+        <header class="headerContent">
+            <!-- NAV-BAR -->
+            <nav class="p-5 flex justify-between items-center lg:px-64">
+                <!-- LOGO -->
+                <div>
+                    <img src="./images/Logo.png" alt="logo">
+                </div>
+                <!-- NAVIGATION MENU -->
+                <div class="hidden md:flex flex-row items-center gap-12">
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">About<i class="fa-solid fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Pricing</a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Contact Us</a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Login</a>
+                    <button class="text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full md:hover:bg-[#8a2be2] md:hover:text-white">Start free trial</button>
+                </div>
+                <button class="md:hidden text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full">Start free trial</button>
+    
+            </nav>
+            <!-- WRAPPER -->
+            <div class="lg:h-[80vh] py-10 myHero p-5 flex flex-col-reverse lg:px-64 lg:py-8 lg:flex-row lg:items-center lg:justify-between">
+                <!-- LEFT SIDE -->
+                <div class="flex flex-col gap-5 lg:gap-8 lg:w-1/2">
+                    <p class="bg-[#f7f1ff] mx-auto w-fit text-[#8a2be2] font-medium flex gap-2 rounded-full px-5 py-2 lg:mx-0">
+                        <img src="./images/edit-brightness.svg" alt="star"> v3.1 released. <a href="#" class="underline lg:hover:no-underline">Learn more</a>
+                    </p>
+                    <h1 class="text-[#8a2be2] mx-auto font-bold text-center text-3xl lg:text-start lg:mx-0 xl:text-4xl 2xl:text-5xl lg:space-y-2"><span class="block">Your data with</span><span class="block">real-time analytics.</span></h1>
+                    <p class="mx-auto text-center text-sm text-black font-medium opacity-50 lg:text-start lg:mx-0 lg:text-md">
+                        <span class="2xl:block">Harness the potential of Big Data Analytics & Cloud Services</span>
+                        and become a data-driven organization with Needle tail
+                    </p>
+                    <div class="mx-auto space-x-2 lg:text-start lg:mx-0">
+                        <button class="bg-[#8a2be2] text-white font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-white lg:hover:text-[#8a2be2] lg:hover:outline lg:hover:outline-1 lg:hover:outline-[#8a2be2]">Start free trial</button>
+                        <button class="bg-white text-[#8a2be2] font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-[#8a2be2] lg:hover:text-white ">Learn more</button>
+                    </div>
+                </div>
+        
+                <!-- RIGHT SIDE -->
+                <div class="mx-auto lg:w-1/2">
+                    <img src="./images/image 1.png" alt="img">
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- MID SECTION -->
+    <section class="p-5 mt-12 flex flex-col items-center justify-between gap-5 lg:mt-32 lg:gap-8">
+        <!-- WHY QUBLY -->
+        <div>
+            <p class="bg-[#f7f1ff] text-[#8a2be2] font-medium px-5 py-2 rounded-full flex items-center justify-center gap-2 w-fit mx-auto"><img src="./images/Icon awesome-eye.png" alt="eye">Why Qubly</p>
+        </div>
+        <h2 class="text-black text-2xl text-center font-semibold xl:text-3xl xl:font-bold">
+            Get actionable insights from Big Data in 3 steps
+        </h2>
+        <p class="text-[#6b6b6b] text-sm text-center lg:max-w-2xl lg:font-medium">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua
+        </p>
+        <!-- 3 STEPS -->
+        <div class="flex flex-col items-center justify-between gap-5 px-5 lg:flex-row">
+            <!-- FIRST -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/chart-bar-33.svg" alt="chart">
+                <h3 class="text-black font-medium text-lg text-center">Valuable business insights</h3>
+                <p class="text-sm text-[#6b6b6b] text-center">
+                    <span>Collect processed & cleansed data that</span>
+                    <span>is ready to be analyzed to gather</span>
+                    <span>valuable business insights.</span>
+                </p>
+            </div>
+            <!-- SECOND -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/newsletter-dev.svg" alt="news-letter">
+                <h3 class="text-black font-medium text-lg text-center">Powerful Algorithms</h3>
+                <p class="text-sm text-[#6b6b6b] text-center">
+                    <span>With the help of powerful algotithms,</span>
+                    <span>quality rules & techniques, obtain</span>
+                    <span>simplified & enriched data.</span>
+                </p>
+            </div>
+            <!-- THIRD -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/timeline.svg" alt="timeline">
+                <h3 class="text-black font-medium text-lg text-center">Data in real-time</h3>
+                <p class="text-sm text-[#6b6b6b] text-center">
+                    <span>Collect data in real-time from multiple</span>
+                    <span>channels and move it into a data lake, in</span>
+                    <span>its original format</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRODUCT TEAM -->
+    <section class="p-5 lg:my-24">
+        <!-- WRAPPER -->
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center">
+            <div class="lg:w-1/2">
+                <img class="mx-auto" src="./images/Group 21.svg" alt="img">
+            </div>
+            <div class="flex flex-col gap-5 lg:w-1/2">
+                <p class="bg-[#f7f1ff] w-fit px-5 py-2 mx-auto flex items-center gap-2 text-[#8a2be2] font-medium rounded-full lg:mx-0">
+                    <img src="./images/Group 11.svg" alt="img">
+                    For Product Teams
+                </p>
+                <h3 class="text-black font-semibold text-2xl text-center lg:text-start lg:text-4xl lg:font-bold">
+                    Launch with the best stack
+                </h3>
+                <p class="text-[#6b6b6b] text-sm text-center lg:text-start lg:max-w-xl lg:text-[18px] lg:leading-normal">
+                    A centralized platform that integrates zillions of data source using Big Data ELT (Extract, Load & Transform) that leaves no data behind
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DATA DRIVEN -->
+    <section class="p-5 lg:mx-32">
+        <!-- WRAPPER -->
+        <div class="flex flex-col gap-5 lg:flex-row-reverse lg:items-center lg:justify-center">
+            <div class="lg:w-1/2">
+                <img class="mx-auto" src="./images/image 6.png" alt="img">
+            </div>
+            <div class="flex flex-col gap-5 lg:w-1/2">
+                <p class="bg-[#f7f1ff] w-fit px-5 py-2 mx-auto flex items-center gap-2 text-[#8a2be2] font-medium rounded-full lg:mx-0">
+                    <img src="./images/Group 28.svg" alt="img">
+                    For Engineering Teams
+                </p>
+                <h3 class="text-black font-semibold text-2xl text-center lg:text-start lg:text-4xl lg:font-bold">
+                    Data-driven pipelines in minutes
+                </h3>
+                <p class="text-black opacity-50 text-sm text-center lg:text-start lg:max-w-xl lg:text-[18px] lg:leading-normal">
+                    Maintenance-free data pipeline with quick set-up and straight-forward deployments that are powered by a modern & scalable platform.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- REVIEW -->
+    <section class="ctoSection my-12 lg:py-12">
+        <!-- WRAPPER -->
+        <div class="ctoContainer px-5 py-10 myReview flex flex-col items-center gap-5">
+            <p class="text-black text-lg text-center px-5 lg:text-2xl lg:font-medium lg:max-w-5xl">
+                "What I love about SullivanAnalytics is the easy way we can collaborate even if there is a lot of people involved in the process"
+            </p>
+            <div>
+                <img class="mx-auto mb-3" src="./images/Profile.png" alt="profile">
+                <h3 class="text-center font-semibold">Rowan Sullivan</h3>
+                <h3 class="text-center font-medium">CTO @SullivanAnalytics</h3>
+            </div>
+            <div class="h-[1px] w-full bg-black opacity-20 rounded-full lg:max-w-5xl"></div>
+            <!-- LOGO WRAPPER -->
+            <div class="flex flex-wrap gap-10 items-center justify-center lg:gap-20">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" class="hidden lg:block" alt="logo">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SIGN UP SECTION -->
+    <section>
+        <!-- WRAPPER -->
+        <div class="space-y-24 lg:flex lg:mx-auto lg:justify-center lg:space-y-0 lg:my-32">
+            <!-- LEFT SIDE -->
+            <div class="space-y-5">
+                <p class="text-black text-center text-xl font-bold lg:text-4xl lg:space-y-2 lg:text-start">
+                    <span class="block">See why the world's best</span>
+                    <span class="block">companies use Qubly to</span>
+                    <span class="block">become truly data-driven.</span>
+                </p>
+                <div class="px-5 flex items-center justify-between">
+                    <div class="h-[1px] bg-black opacity-20 rounded-full w-1/3"></div>
+                    <div class="text-center text-black font-medium opacity-50 w-1/3">Trusted by</div>
+                    <div class="h-[1px] bg-black opacity-20 rounded-full w-1/3"></div>
+                </div>
+                <div class="px-10 mx-auto max-w-sm flex flex-wrap items-center justify-center gap-10 lg:gap-x-20 lg:items-center lg:justify-center lg:px-0">
+                    <img src="./images/Logo.png" alt="logo">
+                    <img src="./images/Logo.png" alt="logo">
+                    <img src="./images/Logo.png" alt="logo">
+                    <img src="./images/Logo.png" alt="logo">
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="bg-[#f9f0ff] px-5 mx-5">
+                <!-- WRAPPER -->
+                <div class="p-5 bg-white flex flex-col items-center justify-between gap-3 shadow-2xl rounded-xl -translate-y-5">
+                    <h3 class="text-black text-2xl font-semibold">
+                        Sign Up
+                    </h3>
+                    <button class="bg-[#8a2be2] text-white text-sm w-full py-3 rounded-md lg:hover:text-[#8a2be2] lg:hover:bg-white lg:hover:outline lg:hover:outline-1 lg:hover:outline-[#8a2be2]">
+                        Start your free trial
+                    </button>
+                    <input class="outline outline-1 outline-[#bcbcbc] w-full px-2 py-2 rounded-md" type="email" placeholder="Your primary email">
+                    <input class="outline outline-1 outline-[#bcbcbc] w-full px-2 py-2 rounded-md" type="password" placeholder="Password">
+                    <input class="outline outline-1 outline-[#bcbcbc] w-full px-2 py-2 rounded-md" type="password" placeholder="Re-type Password">
+                    <p>OR</p>
+                    <a href=""><img src="./images/btn_google_signin_dark_normal_web@2x.svg" alt="SignIn"></a>
+                    <div class="bg-[#bcbcbc] h-[1px] w-full"></div>
+                    <span class="text-center">Already have an account? <a href="/" class="text-[#8a2be2] font-medium underline lg:hover:no-underline">Login</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-[#fbfcff] mt-12 py-12 lg:py-24 p-5">
+        <div class="flex flex-wrap items-start gap-12 lg:flex-row lg:no-wrap lg:justify-center">
+            <div class="space-y-5">
+                <img src="./images/Logo.png" alt="logo" class="logo" />
+                <p class="text-sm font-medium lg:max-w-xs">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas,
+                    repellat atque exercitationem itaque enim perspiciatis fugit.
+                    Molestiae quas animi adipisci maxime, assumenda exercitationem
+                    recusandae.
+                </p>
+                <div class="flex items-center gap-2">
+                    <img src="./images/facebook-icon.svg" alt="Facebook" />
+                    <img src="./images/twitter-3.svg" alt="Twitter" />
+                    <img src="./images/instagram-2016.svg" alt="Instagram" />
+                </div>
+            </div>
+            <!-- PRODUCT -->
+            <div class="space-y-2">
+                <h3 class="text-black text-lg font-bold">Product</h3>
+                <ul class="space-y-2">
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Connections</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Protocols</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Persons</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Integrations</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Catalog</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Pricing</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Security</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">GDPR</a></li>
+                </ul>
+            </div>
+            <!-- FOR DEVLOPERS -->
+            <div class="space-y-2">
+                <h3 class="text-black text-lg font-bold">For Developers</h3>
+                <ul class="space-y-2">
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Docs</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">API</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Open Source</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Engineering Team</a></li>
+                </ul>
+            </div>
+            <!-- COMPANY -->
+            <div class="space-y-2">
+                <h3 class="text-black text-lg font-bold">Company</h3>
+                <ul class="space-y-2">
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Careers</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Blog</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Press</a></li>
+                </ul>
+            </div>
+            <!-- SUPPORT -->
+            <div class="space-y-2">
+                <h3 class="text-black text-lg font-bold">Support</h3>
+                <ul class="space-y-2">
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Help Center</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Contact Us</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Security</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Bulletins</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Documentation</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Partner</a></li>
+                    <li class="text-black opacity-70 lg:hover:text-[#8a2be2] lg:hover:opacity-100"><a href="">Portal</a></li>
+                </ul>
+            </div>
+            <!-- NEWSLETTER -->
+            <div class="space-y-2 mx-auto lg:mx-0">
+                <h3 class="text-black text-lg font-bold">Newsletter</h3>
+                <div class="flex shadow-2xl max-w-xs p-2">
+                    <input class="outline-0" type="email" placeholder="Email" />
+                    <img class="shrink-0" src="./images/Icon ionic-ios-send.png" alt="send"/>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+
+</body>
+</html>
